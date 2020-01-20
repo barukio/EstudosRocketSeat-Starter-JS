@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Curso javascript</title>
+</head>
+
+<body>
+
+    <button id="botao">Criar</button>
+    <div id="quad"></div>
+
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+
+    <ul></ul>
+
+    <script>
+        //EX1 e 2
+        /*         var btn = document.getElementById('botao');
+                var qua = document.getElementById('quad');
+        
+                function getRandomColor() {
+                    var letters = '0123456789ABCDEF';
+                    var color = '#';
+                    for (var i = 0; i < 6; i++) {
+                        color += letters[Math.floor(Math.random() * 16)];
+                    }
+                    return color;
+                }
+        
+                btn.onclick = function () {
+                    var cria = document.createElement('div');
+        
+                    cria.style.width = '100px';
+                    cria.style.height = '100px';
+                    cria.style.backgroundColor = '#F00';
+        
+                    cria.onmouseover = function () {
+                        cria.style.backgroundColor = getRandomColor();
+                    }
+        
+                    qua.appendChild(cria);
+                }; */
+        //EX3 e 4
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+        let list = document.querySelector('ul');
+
+        for (let mostra of nomes) {
+            let ul = document.createElement('li');
+            let colocaNome = document.createTextNode(mostra);
+
+            ul.appendChild(colocaNome);
+            list.appendChild(ul);
+        }
+
+        function adicionar() {
+            let inputElement = document.createElement('li');
+            
+        }
+
+
+    </script>
+</body>
+
+</html>
